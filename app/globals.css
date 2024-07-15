@@ -1,0 +1,57 @@
+
+:root {
+  --background-color-start-rgb: 146, 94, 94;
+  --background-color-end-rgb: 94 , 146, 146;
+}
+
+.background_image_one {
+  background-image: url('./svgs/background_image_one.svg');
+  background-size: cover;
+  background-size: 100% 100%;
+  z-index: -100;
+
+  width: calc(330px/2);
+  height: calc(210px/2);
+
+  position: fixed;
+  bottom: 0vh;
+}
+
+.background_image_two {
+  background-image: url('./svgs/background_image_two.svg');
+  background-size: cover;
+  background-size: 100% 100%;
+  z-index: -100;
+
+  width: calc(250px/2);
+  height: calc(250px/2);
+
+  position: fixed;
+  right: 0px;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  background: black;
+  overflow-y:scroll;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

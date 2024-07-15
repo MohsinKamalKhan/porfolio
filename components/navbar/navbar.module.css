@@ -1,0 +1,40 @@
+.navbar {
+    height: 8vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(1px);
+}
+
+
+.hamburger {
+    padding: 10px;
+}
+
+.link {
+    display: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .link {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,36 @@
+.intro_image_cover {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.intro_image_cover:hover {
+    scale: 1.1;
+}
+
+.intro_image {
+    width: 20vw;
+    margin-bottom: 5px;
+   
+}
+
+.image_section {
+    display: none;
+}
+
+.clickButton {
+    cursor : pointer;
+}
+
+.clickButton:hover {
+    scale: 1.5;
+}
+
+@media (min-width: 768px) {
+    .image_section {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+

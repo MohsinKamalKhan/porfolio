@@ -1,0 +1,16 @@
+.button {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}

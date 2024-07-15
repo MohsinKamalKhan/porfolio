@@ -1,0 +1,40 @@
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40vh;
+    position: sticky;
+    top:60vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: white;
+    margin-top: 4rem;
+    font-size: 0.75rem;
+}
+
+.follow_me_icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.my_info_container {
+    min-width: 20rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        font-size: 1rem;
+    }
+}

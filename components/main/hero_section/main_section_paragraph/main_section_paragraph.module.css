@@ -1,0 +1,37 @@
+
+.intro_para {
+    width: 70%;
+    height: 70%;
+
+    background-image: url("./main_text_background.svg");
+    background-size: cover;
+    background-size: 100% 100%;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_para_heading {
+    padding: 0.5rem;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.intro_para_subtext {
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+
+@media (min-width: 768px) {
+
+    .intro_para {
+        width: 30%;
+    }
+
+    .intro_para_heading {
+        font-size: 28px;
+    }
+}

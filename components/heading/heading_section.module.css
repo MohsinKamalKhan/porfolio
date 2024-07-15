@@ -1,0 +1,31 @@
+
+.heading {
+    text-align: center;
+    margin-top: 4rem;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-end: 50vh;
+}
+
+@keyframes fade-in {
+    from { scale: 0.8; opacity: 0; }
+    to { scale: 1; opacity: 1; }
+}
+
+
+.paragraph {
+    font-size : 26px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .paragraph {
+        font-size: 32px;
+    }
+}
