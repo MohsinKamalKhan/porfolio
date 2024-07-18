@@ -8,6 +8,7 @@ export default async function LatestBlogSection() {
     const supabase = createClient();
 
     const {data: latest_blog_raw} = await supabase.from('get_latest_blog').select('*');
+    if (latest_blog_raw === null) throw Error('Database Connection Failed');
     const latest_blog = latest_blog_raw as CardType[];
 
     return (

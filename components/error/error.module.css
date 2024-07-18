@@ -1,0 +1,24 @@
+.container {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.errorMessage {
+    color: white;
+}
+
+.reloadButton {
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.reloadButton:hover {
+    scale: 1.1;
+}

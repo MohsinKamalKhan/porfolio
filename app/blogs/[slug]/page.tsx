@@ -8,13 +8,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
     const limit: number = Number(params.slug);
     const supabase = createClient();
     const { data : blogs }  = await supabase.from("blogs").select().range(limit * 4, (limit + 1) * 4 - 1);
+    if (blogs === null) throw Error('Could Not Fetch Data!');
     const allBlogs : CardType[] | null = blogs as CardType[] | null;
 
     return (
         <div>
             <HeadingSection heading="BLOGS" />
             { allBlogs && <Cards projectOrblog="BLOG" cards={allBlogs} />}
-            <Pagination pageNumber={limit} />
+            <Pagination ProjectOrBlog="BLOG" pageNumber={limit} />
         </div>
     );
 }

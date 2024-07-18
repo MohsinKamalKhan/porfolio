@@ -1,8 +1,0 @@
-.heading_with_image_container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.image {
-    border-radius: 1rem;
-}
