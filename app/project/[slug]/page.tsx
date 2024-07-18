@@ -1,5 +1,5 @@
+import { CardType } from "@/app/blog/[slug]/page";
 import Article from "@/components/article/article";
-import { CardType } from "@/components/cards/card";
 import { createClient } from "@/utils/supabase/server";
 
 export default async function Page({ params } : { params: {slug: string}}) {
