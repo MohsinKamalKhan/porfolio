@@ -1,12 +1,6 @@
 import Article from "@/components/article/article";
+import { CardType } from "@/components/cards/card";
 import { createClient } from "@/utils/supabase/server";
-
-export type CardType = {
-    date: Date,
-    heading: string,
-    content: string,
-    image_link: string
-}
 
 export default async function Page({ params } : { params: {slug: string}}) {
     const id = params.slug;
