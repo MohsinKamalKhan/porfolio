@@ -1,4 +1,4 @@
-import Card, { CardType } from "@/components/cards/card";
+import { CardType } from "@/components/cards/card";
 import HeadingSection from "@/components/heading/heading_section";
 import styles from './latest_blog_section.module.css';
 import Button from "@/components/button/button";
