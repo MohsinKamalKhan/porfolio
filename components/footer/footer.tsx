@@ -1,4 +1,8 @@
 import styles from './footer.module.css';
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import Link from 'next/link';
 
 export default async function FooterSection() {
 
@@ -10,9 +14,9 @@ export default async function FooterSection() {
             <div className={styles.follow_me_container}>
                 <h2>FOLLOW ME</h2>
                 <div className={styles.follow_me_icons}>
-                    <div className={styles.icon}></div>
-                    <div className={styles.icon}></div>
-                    <div className={styles.icon}></div>
+                    <Link target='_blank' href={'https://github.com/mohsinkamalkhan'}><FaGithub /></Link>
+                    <Link target='_blank' href={'https://www.linkedin.com/in/mohsin-kamal-khan-b5bba1309/'}><CiLinkedin /></Link>
+                    <Link target='_blank' href={'https://www.instagram.com/mkk__rg/'}><FaInstagram /></Link>
                 </div>
             </div>
             <div className={styles.contact_container}>

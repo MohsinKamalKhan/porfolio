@@ -7,14 +7,16 @@ import Pagination from "@/components/pagination/pagination";
 export default async function ProjectsPage({ params }: { params: { slug: string } }) {
     const limit: number = Number(params.slug);
     const supabase = createClient();
-    const { data : projects }  = await supabase.from("projects").select().range(limit * 4, (limit + 1) * 4 - 1);
-    if (projects === null) throw Error('Database Connection Failed');
-    const allProjects : CardType[] | null = projects as CardType[] | null;
+
+    const { data : response }  = await supabase.from("projects").select('id, heading, content, date, image_link').range(limit * 4, (limit + 1) * 4 - 1);
+    if (response === null) throw Error('FETCHING DATA FROM DB FAILED!');
+
+    const allProjects = response as CardType[];
 
     return (
         <div>
             <HeadingSection heading="PROJECTS" />
-            { allProjects && <Cards projectOrblog="PROJECT" cards={allProjects} />}
+            <Cards projectOrBlog="PROJECT" cards={allProjects} />
             <Pagination ProjectOrBlog="PROJECT" pageNumber={limit} />
         </div>
     );

@@ -6,16 +6,16 @@ import { useEffect, useState } from 'react';
 
 const slides = [
     {
-        name : 'Figma Designer',
-        image_url : "/images/figma.svg"
-    },
-    {
         name : 'NEXTJS Developer',
         image_url : '/images/next-js.svg'
     },
     {
         name : 'Supabase Developer',
         image_url : '/images/supabase.svg'
+    },
+    {
+        name : 'Figma Designer',
+        image_url : "/images/figma.svg"
     },
     {
         name : 'MongoDB Developer',

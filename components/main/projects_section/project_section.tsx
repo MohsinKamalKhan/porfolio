@@ -6,7 +6,7 @@ import { CardType } from "@/components/cards/card";
 
 export default async function ProjectSection() {
     const supabase = createClient();
-    const { data : projects }  = await supabase.from("projects").select("image_link, heading").range(0, 4);
+    const { data : projects }  = await supabase.from("projects").select("id, image_link, heading").range(0, 4);
     if (projects === null) throw Error('Database Connection Failed');
     
     const five_projects : CardType[] = projects as CardType[];

@@ -1,18 +1,17 @@
-.card_section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1rem;
+.container {
+    margin: 5rem auto;
 }
 
-.latest_blog_section {
-    margin-top: 50px;
+.card_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+    margin: 3rem auto;
 }
 
 @media (min-width: 768px) {
     .card_section {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

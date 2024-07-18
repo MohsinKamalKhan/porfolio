@@ -3,14 +3,15 @@
     width: 90vw;
     margin: 2rem auto;
     justify-content: center;
-    animation: translate-in linear;
+
+    animation: translate-in linear forwards;
     animation-timeline: view();
     animation-range-end: 50vh;
+    transform: translateX(-100vh);
 }
 
 @keyframes translate-in {
-    from { transform: translateX(-100%); opacity: 0; scale: 0; }
-    to {  transform: translateX(0%); opacity: 1; scale: 1; }
+    to {  transform: translateX(0%); }
 }
 
 .panel {
