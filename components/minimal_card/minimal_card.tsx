@@ -19,6 +19,9 @@ export default function MinimalCard({card, projectOrBlog} : {card: MinimalCardTy
                     <h2>{card.heading}</h2>
                     <p>{String(card.date).slice(2, 10)}</p>
                 </div>
+                <div className={styles.read_more_container}>
+                    <p>READ MORE</p>
+                </div>
             </div>
         </ProjectOrBlog>
     );
