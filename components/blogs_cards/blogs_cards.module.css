@@ -1,3 +1,4 @@
+
 .container {
     position: relative;
     width: 300px;
@@ -17,6 +18,12 @@
     align-items: center;
     backdrop-filter: blur(2px);
     opacity: 0;
+}
+
+.read_more_container > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .container:hover .read_more_container {
@@ -48,7 +55,7 @@
     width: 100%;
     text-align: center;
     border-radius: 10px;
-    padding: 2px;
+    padding: 1rem;
     text-transform: capitalize;
 }
 

@@ -1,0 +1,11 @@
+
+.section {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+

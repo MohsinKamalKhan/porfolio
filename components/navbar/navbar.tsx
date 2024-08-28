@@ -16,7 +16,7 @@ export default function Navbar() {
     return (
         <div className={styles['navbar']}>
             <p className={styles['link']}><Link href={'/'}>HOME</Link></p>
-            <p className={styles['link']}><Link href={'/projects/0'}>PROJECTS</Link></p>
+            <p className={styles['link']}><Link href={'/projects'}>PROJECTS</Link></p>
             <p className={styles['link']}><Link href={'/blogs/0'}>BLOGS</Link></p>
             <p className={styles['link']}><Link href={'/about-me'}>ABOUT ME</Link></p>
 

@@ -1,0 +1,9 @@
+.info_card {
+    background-color: rgba(246, 246, 246, 0.5);
+    margin: 2rem;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1.5rem;
+}

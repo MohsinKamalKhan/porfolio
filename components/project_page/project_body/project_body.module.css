@@ -1,0 +1,19 @@
+.body h3 {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.body {
+    padding: 0.5rem;
+    color: white;
+    display: grid;
+    gap: 2rem;
+}
+
+.body > div {
+    display: grid;
+    gap: 1rem;
+}
