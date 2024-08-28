@@ -21,7 +21,7 @@ export default function ProjectPageHeader({project_name, image_link, link} : Pro
             <div className={styles.image_column}>
                 <a className={styles.image_link} href={link}>
                     <Image className={styles.image} alt="project image" src={image_link} width={300} height={200} />
-                    <p>Visit Project<FaExternalLinkAlt style={{marginLeft:'8px'}} /></p>
+                    <p><span className={styles.visit_page}>Visit Project<FaExternalLinkAlt style={{marginLeft:'8px'}} /></span></p>
                 </a>
             </div>
         </header>

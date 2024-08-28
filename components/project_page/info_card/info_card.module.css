@@ -6,4 +6,9 @@
     border-radius: 1rem;
     display: grid;
     gap: 1.5rem;
+    max-height: 50vh;
+}
+
+.underline {
+    text-decoration: underline;
 }

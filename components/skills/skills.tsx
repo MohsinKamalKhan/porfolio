@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import styles from './skills.module.css';
 import { useState } from 'react';
-import { FaJsSquare } from "react-icons/fa";
-
 
 export default function Skills({skills_arr} : {skills_arr : string[]}) {
     const [skills, setSkills] = useState(skills_arr);
@@ -29,7 +27,7 @@ export default function Skills({skills_arr} : {skills_arr : string[]}) {
            
             <div>
                 {skills.slice(0, 4).map(skill => {
-                    return <p className={styles.skill}>{skill}</p>
+                    return <p key={skill} className={styles.skill}>{skill}</p>
                 })}
             </div>
 
