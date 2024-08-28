@@ -5,7 +5,7 @@ export default function InfoCard({project_info} : {project_info: ProjectType}) {
 
     return (
         <div className={styles.info_card}>
-            <p>Project Name: {project_info.project_name}</p>
+            <p>Project Name: {project_info.name}</p>
             <p>Live Preview: {project_info.live_preview || 'N/A'}</p>
             <p>Date Started: {String(project_info.date_started).slice(0, 15)}</p>
             <p>Date Ended: {String(project_info.date_ended).slice(0, 15)}</p>
