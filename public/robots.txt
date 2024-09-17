@@ -7,4 +7,5 @@ Host: https://mohsinkamal.me
 
 # Sitemaps
 Sitemap: https://mohsinkamal.me/sitemap.xml
+Sitemap: https://mohsinkamal.me/sitemap-0.xml
 Sitemap: https://mohsinkamal.me/server-sitemap.xml
