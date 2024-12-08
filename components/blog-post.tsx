@@ -13,7 +13,7 @@ interface BlogPostProps {
 export function BlogPost({ title, image, date, link }: BlogPostProps) {
   return (
     <Card className="overflow-hidden">
-      <Image src={image} alt={title} width={400} height={200} className="w-[400px] h-[200px] object-cover" />
+      <Image src={image} alt={title} width={500} height={250} className="mx-auto w-[500px] h-[250px] object-cover" />
       <CardContent className="p-4">
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
       </CardContent>
