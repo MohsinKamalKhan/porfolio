@@ -34,12 +34,12 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-bold text-xl">MK</span>
           </Link>
-          <div className="sm:hidden md:inline-flex items-center gap-6">
+          <div className="hidden md:inline-flex items-center gap-6">
             <NavItems />
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <Button asChild className="sm:hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex">
             <Link href="/#contact">Contact Me</Link>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
